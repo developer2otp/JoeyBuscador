@@ -1,0 +1,55 @@
+.loader-page {
+
+    position: fixed;
+    z-index: 9999999;
+    background: #fdfdfd;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s ease;
+
+}
+
+@media (min-width: 300px){
+
+    .imgPrelouder{
+        width: 65%;
+    }
+
+}
+
+@media (min-width: 425px){
+
+    .imgPrelouder{
+        width: 65%;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .imgPrelouder{
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .imgPrelouder{
+        width: 25%;
+    }
+
+}
+
+@media (min-width: 1920px){
+
+    .imgPrelouder{
+        width: 20%;
+    }
+
+}
