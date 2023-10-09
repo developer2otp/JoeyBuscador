@@ -9,11 +9,11 @@
 
     try {
 
-        if( isset($_POST['string']) ){
+        if( isset($_POST['id']) ){
 
-            $String = $_POST["string"];
+            $String = $_POST["id"];
 
-            if (($string == null) || ($string == "")){
+            if (($String == null) || ($String == "")){
                 $camporequerido = $camporequerido.","."string"; $valid=1;
             }
 
