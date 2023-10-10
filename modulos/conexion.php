@@ -1,35 +1,35 @@
-<?php
+<?php 
 
-  header('X-Content-Type-Options: nosniff');
-  header('X-Frame-Options: SAMEORIGIN');
-  header_remove("X-Powered-By");
-  header("Cache-Control: no-cache, max-age=3600, no-store");
-  header("Pragma: no-cache");
-  date_default_timezone_set('America/Caracas');
+header("X-Co\x6e\x74ent-T\x79\x70e-\x4fptions: n\x6fs\x6e\x69f\x66");
+header("\x58-\x46\x72\x61\x6d\x65-Optio\x6e\x73: \x53A\x4dE\x4fR\x49\x47\x49N");
+header_remove("X-Po\x77\x65re\x64-\x42\x79");
+header("\x43\x61c\x68\x65-\x43\x6f\x6e\x74ro\x6c:\x20\x6eo-c\x61\x63\x68\x65,\x20\x6da\x78-age=3\x360\x30, \x6eo-\x73\x74o\x72\x65");
+header("Pr\x61gm\x61:\x20n\x6f-c\x61c\x68\x65");
+date_default_timezone_set("\x41\x6der\x69ca/\x43ar\x61\x63a\x73");
 
-  class Connection extends PDO {
-
-    private $tipo_de_base = 'mysql';
-    private $host = '5.161.186.173';
-    private $usuario = 'ConsultaPrecio';
-    private $contrasena = 'Ejvr1395**';
-    private $nombre_de_base = 'verufact_shiliquitas';
-      
-    public function __construct() {
-      try{
-        parent::__construct($this->tipo_de_base.':host='.$this->host.';dbname='.$this->nombre_de_base, $this->usuario, $this->contrasena);
-        parent::setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      }catch(PDOException $e){
-        $resultado = new stdClass();
-        $resultado->result = FALSE;
-        $resultado->icono = "error";
-        $resultado->titulo = "Error!";
-        $resultado->mensaje = "Ha surgido un error y no se puede conectar a la base de datos.";
-        $resultado->debug = $e->getMessage();
-        echo json_encode($resultado);
-        exit;
-      }
+class Connection extends PDO{
+  private$tipo_de_base="\x6dysql";
+  private$host="5\x2e\x3161\x2e\x31\x386\x2e1\x373";
+  private$usuario="\x43\x6fn\x73u\x6c\x74\x61\x50recio";
+  private$contrasena="E\x6av\x72\x31395**";
+  private$nombre_de_base="ver\x75fa\x63t_\x73\x68i\x6c\x69\x71uit\x61\x73";
+  
+  public function __construct(){
+    try{
+      parent::__construct($this->tipo_de_base.":h\x6fst\x3d".$this->host."\x3bd\x62n\x61m\x65\x3d".$this->nombre_de_base,$this->usuario,$this->contrasena);
+      parent::setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    }catch(PDOException$e){
+      ${"\x47L\x4f\x42\x41\x4c\x53"}["\x6an\x74ag\x73\x63"]="r\x65\x73\x75l\x74\x61\x64\x6f";
+      ${"\x47L\x4f\x42\x41\x4c\x53"}["u\x6d\x6cp\x62\x65\x64n\x71\x6d"]="\x72e\x73\x75\x6ct\x61\x64\x6f";
+      ${${"G\x4c\x4f\x42\x41L\x53"}["\x75\x6dl\x70bed\x6e\x71\x6d"]}=new stdClass();
+      $resultado->result=FALSE;
+      $resultado->icono="e\x72\x72or";
+      $resultado->titulo="E\x72\x72o\x72!";
+      $resultado->mensaje="Ha\x20\x73ur\x67\x69do \x75\x6e e\x72\x72\x6fr y \x6e\x6f\x20\x73\x65 \x70ue\x64e\x20\x63o\x6ee\x63tar a\x20la b\x61se\x20\x64e\x20d\x61t\x6f\x73.";
+      $resultado->debug=$e->getMessage();echo json_encode(${${"\x47\x4cO\x42\x41\x4c\x53"}["j\x6e\x74\x61gsc"]});
+      exit;
     }
   }
-  
+}
+
 ?>
