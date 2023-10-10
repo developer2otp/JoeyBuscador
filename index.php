@@ -40,7 +40,7 @@
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="base-tab1" data-toggle="tab" aria-controls="tab1" href="#tab1" aria-expanded="true">
-                                            CONSULTA PRECIO MARKET LAS SHILIQUITAS
+                                            CONSULTAS PRECIO MARKET LAS SHILIQUITAS
                                         </a>
                                     </li>
                                 </ul>
