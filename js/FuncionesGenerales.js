@@ -14,7 +14,7 @@ function contenidoMain(data, urlControlador) {
 
                 for (let j = 0; j < obj.data.length; j++) {
 
-                    let rowNode = t.row.add([obj.data[j]['barcode'], obj.data[j]['name'], number_format(obj.data[j]['sale_unit_price'], 2, '.', ',')]).draw().node();
+                    let rowNode = t.row.add([obj.data[j]['barcode'], obj.data[j]['name'], 'S/ '+number_format(obj.data[j]['sale_unit_price'], 2, '.', ',')]).draw().node();
                     $(rowNode).find('td').addClass('text-center');
 
                 }
