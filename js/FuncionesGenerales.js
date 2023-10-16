@@ -19,6 +19,9 @@ function contenidoMain(data, urlControlador) {
 
                 }
 
+                $('#ConsultarItem').val('');
+                $('#ConsultarItem').focus();
+
             }else{
 
                 $('#principal').empty();
